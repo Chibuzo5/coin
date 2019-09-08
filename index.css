@@ -1,0 +1,71 @@
+.masthead{
+    
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background-image: url('images/accountant-accounting-calculator-1548999.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.about-section{
+    padding: 5rem;
+    height:500px;
+}
+nav{
+  background-color: #fff!important;
+}
+}
+#mainNav{
+  min-height: 56px;
+}
+#mainNav .nav-link:active {
+  color: white;
+  border-bottom: 1px solid black;
+}
+body{
+  font-family: 'Hepta Slab' !important;
+}
+.section{
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 1rem 0;
+  background-image: url('images/accountant-accounting-calculator-1548999.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+.sectioninfo{
+  padding: 10rem 0;
+}
+.social{
+  padding:2rem 0;
+}
+ .social {
+  margin-top: 5rem;
+}
+
+.social a {
+  text-align: center;
+  height: 3rem;
+  width: 3rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  line-height: 3rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.social a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+ .social a:active {
+  color: #fff;
+}
