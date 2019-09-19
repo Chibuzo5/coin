@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Coin</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+        <script src="https://kit.fontawesome.com/b21cdbaea4.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+       <!-- <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">-->
+        <link href="https://fonts.googleapis.com/css?family=Hepta+Slab:400,700&display=swap" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head>
+    <body id="body">
+        
+                <nav class="overlay navbar navbar-expand-lg navbar-light  fixed-top " id="mainNav">
+                        <div class="container">
+                                <a class="js-scroll-trigger navbar-brand nav-item active" href="#body"><i class="fas fa-coins "></i> Coin</a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                  <span class="navbar-toggler-icon"></span>
+                                </button>
+                              
+                     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                     <div class="navbar-nav align-items-end">
+                       <ul class="navbar-nav mr-auto">
+                                                    
+                             <li class="nav-item">
+                              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                             </li>
+                             
+                               <li class="nav-item">
+                             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link " href=""> <i class="fa fa-user-plus"></i> Sign up</a>
+                             </li>
+                             <li class="nav-item">
+                              <a class="nav-link " href=""> <i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
+                             </li>
+                      </ul>
+                     </div>
+                         </div>
+                        </div>
+                     </nav>
+        
+            
+             <header class="masthead mx-auto">
+                    <div class="container d-flex h-100 align-items-center">
+                      <div class="mx-auto text-center">
+                        <h1 class="mx-auto my-30 text-uppercase display-3 text-light-50">Welcome to coin</h1>
+                        <h2 class=" mx-auto mt-2 mb-5 text-light-50">Onestop for all financial transations</h2>
+                      
+                      </div>
+                    </div>
+                </header>
+                <!-- About Section -->
+  <section id="about" class="about-section text-center bg-light ">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 mx-auto">
+              <h2 class="text-dark mb-4 display-3"> About Coin</h2>
+              <p class="text-dark-50">Coin is online payment processor,built to help business and individuals deal with the hassle of online payment </p>
+            </div>
+          </div>
+          <!--<img src="images/art-artist-black-and-white-265047 (1).jpg" class="img-fluid" alt="">-->
+        </div>
+      </section>
+                  <!-- contact section-->
+                  <section id="contact" class=" text-center section  bg-light ">
+                    <div class="container">
+                      <div class="row">
+                      </div class="">
+                             <h2 class="display-4">Subscribe to receive updates!</h2>
+                            <form class="form-inline d-flex">
+                              <input type="email" name="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
+            <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+                            </form>
+                        </div>
+                        
+                        
+                          <div class="row d-flex justify-content-center align-items-center " >
+                            <div class="social d-flex justify-content-center">
+                              <a href="#" class="mx-4">
+                                <i class="fab fa-twitter fa-3x"></i>
+                              </a>
+                              <a href="#" class="mx-4">
+                                <i class="fab fa-facebook-f fa-3x"></i>
+                              </a>
+                              <a href="#" class="mx-4">
+                                <i class="fab fa-github fa-3x"></i>
+                              </a>
+                            </div>
+                          </div>
+                        
+                    </div>
+                  </section>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
