@@ -37,10 +37,10 @@
                              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link " href=""> <i class="fa fa-user-plus"></i> Sign up</a>
+                              <a class="nav-link " href="">  Sign up</a>
                              </li>
                              <li class="nav-item">
-                              <a class="nav-link " href=""> <i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
+                              <a class="nav-link " href=""> Login</a>
                              </li>
                       </ul>
                      </div>
