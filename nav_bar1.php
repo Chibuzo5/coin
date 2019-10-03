@@ -1,9 +1,9 @@
 <?php
 
 echo  ('
-<nav class="overlay navbar navbar-expand-lg navbar-trans fixed-top " id="mainNav">
+<nav class="overlay navbar navbar-expand-lg navbar-trans fixed-top mainNav">
                         <div class="container">
-                                <a class="js-scroll-trigger navbar-brand nav-item active" href="#body"><i class="fas fa-coins "></i> Coin</a>
+                                <a class="js-scroll-trigger navbar-brand nav-item active" href="#"><i class="fas fa-coins "></i> Coin</a>
                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                   <span class="navbar-toggler-icon"></span>
                                 </button>
