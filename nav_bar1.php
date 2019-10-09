@@ -16,15 +16,13 @@ echo  ('
                               <a class="nav-link js-scroll-trigger" href="#about">About</a>
                              </li>
                              
-                               <li class="nav-item">
-                             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-                            </li>
+                             
                             <li class="nav-item">
                                <!-- Button trigger modal -->
                               <a class="nav-link " href="" >  Sign up</a>
                              </li>
                              <li class="nav-item">
-                              <a class="nav-link " href=""  data-toggle="modal" data-target="#ModalCenter"> Login</a>
+                              <a class="nav-link " href="" > Login</a>
                              </li>
                       </ul>
                      </div>
