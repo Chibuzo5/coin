@@ -3,7 +3,7 @@
 echo  ('
 <nav class="overlay navbar navbar-expand-lg navbar-trans fixed-top mainNav">
                         <div class="container">
-                                <a class="js-scroll-trigger navbar-brand nav-item active" href="#"><i class="fas fa-coins "></i> Coin</a>
+                                <a class=" navbar-brand nav-item active" href="index.php"><i class="fas fa-coins "></i> Coin</a>
                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                   <span class="navbar-toggler-icon"></span>
                                 </button>
@@ -13,7 +13,7 @@ echo  ('
                        <ul class="navbar-nav mr-auto">
                                                     
                              <li class="nav-item">
-                              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                              <a class="nav-link " href="about.php">About</a>
                              </li>
                              
                              
