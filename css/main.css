@@ -1,37 +1,38 @@
 * {
   font-family: "Lora";
+  -webkit-box-sizing: none;
+          box-sizing: none;
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, right top, from(#fdfcfb), to(#e2d1c3));
+  background-image: linear-gradient(to right, #fdfcfb 0%, #e2d1c3 100%);
+}
+
+nav, .c_btn {
+  border-radius: 25px;
+}
+
+.c_btn {
+  background-image: #feada6;
+  -webkit-transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+  transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.35);
 }
 
 .index_text {
-  margin-top: 16rem;
+  margin-top: 10rem;
 }
 
 .index_text h1, .index_text h2 {
-  color: white;
+  color: black !important;
 }
 
-.home_background {
-  background: #44A08D;
-  /* fallback for old browsers */
-  background: -webkit-gradient(linear, left top, right top, from(#093637), to(#44A08D));
-  background: linear-gradient(to right, #093637, #44A08D);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.mainNav {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.mainNav a {
-  color: white !important;
-  font-size: 20px;
-}
-
-.mainNav a:hover {
-  border-bottom: 1px solid orange;
-  font-weight: 500;
-  -webkit-transition: ease-in-out all .4s;
-  transition: ease-in-out all .4s;
+.img {
+  position: absolute;
+  left: -50px;
+  top: -195px;
+  z-index: -20;
 }
 /*# sourceMappingURL=main.css.map */
