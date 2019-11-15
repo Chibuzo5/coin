@@ -3,10 +3,9 @@
 <head>
      <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Coin</title>
+    <title>About | Coin</title>
     <meta name="description" content="">
-    
-   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -15,17 +14,37 @@
     <link rel="stylesheet" href="./css/main.css">
   </head>
 <body class="about_page" >
-   <div>
-    <?php
-    include 'nav_bar1.php';
-    ?>
-    <style>
+   <div class='container'>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mt-3 ">
+  <a class="navbar-brand" href="index.php">
+    <img src="SVG/coins-29516.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+    Coin
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+    <ul class="navbar-nav ">
       
-      </style>
-   </div>
-      <div class="body" style="color:white; text-align:center;">
+      <li class="nav-item">
+        <a class="nav-link" href="about.php">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="CreateAccount.php">Sign Up</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="modal" data-target="#exampleModalCenter">Login</a>
+      </li>
+    </ul>
+    
+  </div>
+</nav>
+</div>
+
+      <div class="aboutPage" style="color:white; text-align:center;">
         <div class="container">
-          <h2 class="text-uppercase display-3   " >About Coin </h2>
+          <h2 class="text-uppercase display-3" >About Coin </h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi iure ducimus ad quas doloremque accusamus
            perferendis pariatur laboriosam optio, nisi porro debitis cumque assumenda repellendus hic sint blanditiis 
            praesentium maiores aut. Quae animi velit, mollitia quibusdam porro molestiae dolor, temporibus maxime 
@@ -44,6 +63,8 @@
            <script defer async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
         <div>
+         <div class='aboutPage-svg'><img src='SVG/team-4423339.svg'></div>
+         
 </body>
 </html>
  
