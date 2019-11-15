@@ -19,7 +19,7 @@
                                     <!-- Navigation Element -->
      <div class='container'>
     <nav class="navbar navbar-expand-lg navbar-light bg-light mt-3 ">
-  <a class="navbar-brand" href="#">
+  <a class="navbar-brand" href="index.php">
     <img src="SVG/coins-29516.svg" width="30" height="30" class="d-inline-block align-top" alt="">
     Coin
   </a>
@@ -31,10 +31,10 @@
     <ul class="navbar-nav ">
       
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="about.php">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Sign Up</a>
+        <a class="nav-link" href="CreateAccount.php">Sign Up</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" data-toggle="modal" data-target="#exampleModalCenter">Login</a>
