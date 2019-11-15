@@ -35,4 +35,40 @@ nav, .c_btn {
   top: -195px;
   z-index: -20;
 }
+
+.aboutPage {
+  color: #390D10 !important;
+}
+
+.aboutPage h2 {
+  color: #A48484 !important;
+}
+
+.aboutPage-svg {
+  position: absolute;
+  left: 21rem;
+  top: 5rem;
+  z-index: -20;
+  width: 50%;
+}
+
+.createaccount h2 {
+  text-align: center;
+}
+
+.createaccount .createForms {
+  margin-top: 1rem;
+}
+
+.createaccount .createForms input:not([type='checkbox']) {
+  width: 50%;
+}
+
+.createaccount .img-c {
+  position: absolute;
+  left: 40rem;
+  top: -21rem;
+  z-index: -20;
+  width: 50%;
+}
 /*# sourceMappingURL=main.css.map */
