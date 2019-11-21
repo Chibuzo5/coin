@@ -65,41 +65,22 @@ nav {
     width:50%;
         }
 }
-// .home_background{
-   
-// background:$back1;
 
-// }
-
-// .mainNav{
-//     box-sizing: border-box;
-   
-   
-//     a{
-//       color:$text_color !important;
-//       font-size: 20px;
-//       &:hover{
-//           border-bottom: 1px solid $hover_color;
-//           font-weight: 500;
-//          transition: ease-in-out all .4s;
-         
-          
-        
-//       }
-//     }
-// }
-// // styles for the about page
-// .about_page{
-// @extend .home_background;
-// color: white !important;
-
-//  .body{
-//      margin-top:80px;
-//      color:white !important;
-//      h2{
-//          text-align: center !important;
-//      }
-//  }
-
-      
-// }
+.home {
+#hello{
+   padding-top: 30px !important;
+}
+#cloudy{
+    position:absolute;
+    right:140px; 
+    top:80px
+}
+#info{
+    position:absolute;
+    right:120px;
+    top:200px
+}
+}
+.cards{
+    
+}

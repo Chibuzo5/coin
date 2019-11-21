@@ -71,4 +71,20 @@ nav, .c_btn {
   z-index: -20;
   width: 50%;
 }
+
+.home #hello {
+  padding-top: 30px !important;
+}
+
+.home #cloudy {
+  position: absolute;
+  right: 140px;
+  top: 80px;
+}
+
+.home #info {
+  position: absolute;
+  right: 120px;
+  top: 200px;
+}
 /*# sourceMappingURL=main.css.map */
