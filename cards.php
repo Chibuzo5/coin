@@ -58,13 +58,16 @@
     </div>
   </div>
 </nav>
-<div class="row">
+<!-- <div class="row">
     <div class="col text-center">
       <button class="btn btn-default" data-toggle="modal" data-target="#addnewcards">Add New Card</button>
     </div>
-  </div>
+  </div> -->
+  <div class='row d-flex justify-content-center mt-3'>
+    
  <button  class='btn btn-primary' id='addnewcard' data-toggle="modal" data-target="#addnewcards">Add New Card</button>
- 
+
+</div>
  <!-- Modal to add new cards -->
 <div class="modal fade" id="addnewcards" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -72,7 +75,7 @@
       
       <div class="modal-body">
         <form>
-            <h5 class="" id="exampleModalLabel">Add New Card</h5>
+            
     <div class="form-group">
     <label for="cardnumber">Card Number</label>
     <input type="number" class="form-control" id="cardnumber" aria-describedby="emailHelp" placeholder="Enter Card Number">
@@ -81,14 +84,15 @@
     <label for="cardtype">Card Type</label>
     <input type="number" readonly class="form-control" id="cardtype" aria-describedby="emailHelp" placeholder="">
   </div>
+  
   <div class="form-group">
-    <label for="cardtype">Card Type</label>
-    
-    <select>
-        <option>Master Card </option>
+    <label for="exampleFormControlSelect1">Card Type</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>... </option>
+      <option>Master Card </option>
         <option>Visa Card </option>
         <option>Verve </option>
-</select>
+    </select>
   </div>
   <div class="form-group">
     <label for="cardpassword"> Card Password</label>
