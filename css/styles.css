@@ -41,12 +41,7 @@ This Project is licensed under the GPL.
 /* General */
 
 body {
-    color: #666666;
-   
-    line-height: 23px;
-    background: #fff;
-    font-family: 'Open Sans', sans-serif;
-    -webkit-font-smoothing: antialiased;
+    
 }
 h1,
 h2,
@@ -62,6 +57,8 @@ h6 {
 }
 .my-cc{
   font-size: 13px;
+    line-height: 23px;
+    -webkit-font-smoothing: antialiased;
 }
 h1 {
     font-size: 30px;
