@@ -30,8 +30,14 @@
       <li class="nav-item">
         <a class="nav-link" href="about.php">About</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="CreateAccount.php">Sign Up</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Sign Up
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="CreateAccount.php">Individual Account</a>
+          <a class="dropdown-item" href="cooperateAccount.php">Cooperate Account</a>
+          
       </li>
       <li class="nav-item">
         <a class="nav-link" data-toggle="modal" data-target="#exampleModalCenter">Login</a>
@@ -41,10 +47,11 @@
   </div>
 </nav>
 </div>
-
-      <div class="aboutPage" style="color:white; text-align:center;">
+  
+      <div class="aboutPage" style="color:white; ">
         <div class="container">
           <h2 class="text-uppercase display-3" >About Coin </h2>
+          
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi iure ducimus ad quas doloremque accusamus
            perferendis pariatur laboriosam optio, nisi porro debitis cumque assumenda repellendus hic sint blanditiis 
            praesentium maiores aut. Quae animi velit, mollitia quibusdam porro molestiae dolor, temporibus maxime 
@@ -61,10 +68,63 @@
            <a href="https://twitter.com/nathanbolt5?ref_src=twsrc%5Etfw" class="twitter-follow-button" 
            data-size="large" data-show-count="false">Follow @nathanbolt5</a>
            <script defer async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
+        </div>       
+            <div ><img  class='aboutPage-svg' src='SVG/undraw_newspaper_k72w.svg'></div>
         <div>
-         <div class='aboutPage-svg'><img src='SVG/team-4423339.svg'></div>
-         
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+          
+      <div class="modal-body">
+        <h3>Select Account Type</h3>
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Individual</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Cooperate</a>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+<form>
+  <div class="form-group">
+    <label for="individualEmail">Email address</label>
+    <input type="email" name='individualEmail' class="form-control" id="individualEmail" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+  <div class="form-group">
+    <label for="individualPassword">Password</label>
+    <input type="password" name='individualPassword' class="form-control" id="individualPassword" placeholder="Password">
+  </div>
+  <div >
+</div>
+  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+  </div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+    <form>
+  <div class="form-group">
+    <label for="cooperateEmail">Email address</label>
+    <input type="email"name='cooperateEmail' class="form-control" id="cooperateEmail" aria-describedby="emailHelp" placeholder="Enter email">
+    
+  </div>
+  
+  <div class="form-group">
+    <label for="cooperatePassword">Password</label>
+    <input type="password" name='cooperatePassword' class="form-control" id="cooperatePassword" placeholder="Password">
+  </div>
+  <div >
+</div>
+  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+  </div>
+</div>   
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
  
