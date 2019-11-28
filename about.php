@@ -71,6 +71,7 @@
         </div>       
             <div ><img  class='aboutPage-svg' src='SVG/undraw_newspaper_k72w.svg'></div>
         <div>
+          <!-- Login Modal Form -->
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
