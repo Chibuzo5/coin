@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+     <script src="sweetalert2.min.js"></script>
+     
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
@@ -51,31 +54,50 @@
 <!-- Sign up form-->
 <div class='container'>
 <h2 class='row d-flex justify-content-center mt-3'>Create Individual Account</h2>
-<form class='createForms'>
+<form class='createForms' onsubmit="return validate()" >
+
   <div class="form-group row">
-    <label for="FirstName" class="col-sm-2 col-form-label">First Name</label>
+    <label for="firstName" class="col-sm-2 col-form-label">First Name</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="FirstName"  placeholder='enter your first name'>
+      <input type="text" class="form-control" id="firstName"  placeholder='enter your first name'>
+      <div class="alert alert-danger mt-2 fade show" disabled id='firstnameerror' role="alert">
+          <p id='firstnameerrorinfo'></p>
+        </div>
     </div>
   </div>
+
   <div class="form-group row">
     <label for="lastName" class="col-sm-2 col-form-label">Last Name</label>
     <div class="col-sm-10">
       <input type="text" class="form-control" id="lastName" placeholder="enter your last name">
+      <div class="alert alert-danger mt-2 fade show" id='lastnameerror' role="alert">
+          <p id='lastnameerrorinfo'></p>
+        </div>
     </div>
-  </div>
+    </div>
+
   <div class="form-group row">
     <label for="email" class="col-sm-2 col-form-label">Email</label>
     <div class="col-sm-10">
       <input type="email" class="form-control" id="email" placeholder="enter your email">
+      <div class="alert alert-danger mt-2 fade show" id='emailnameerror' role="alert">
+          <p id='emailnameerrorinfo'></p>
+        </div>
     </div>
-  </div>
+    </div>
+  
+
   <div class="form-group row">
     <label for="phonenumber" class="col-sm-2 col-form-label">Phone</label>
     <div class="col-sm-10">
-      <input type="tel" class="form-control" id="phonenumber" placeholder="enter your phone number">
+      <input type="number" class="form-control" id="phonenumber" placeholder="enter your phone number">
+      <div class="alert alert-danger mt-2 fade show" id='phoneerror' role="alert">
+          <p id='phoneerrorinfo'></p>
+        </div>
     </div>
-  </div>
+    </div>
+  
+
   <div class="form-group row">
     <label for="countriesList"class="col-sm-2 col-form-label">Country</label>
     <div class="col-sm-10">
@@ -333,50 +355,70 @@
     </select>
 </div>
   </div>
+
   <div class="form-group row">
     <label for="dateofbirth" class="col-sm-2 col-form-label">Date of birth</label>
     <div class="col-sm-10">
       <input type="date" class="form-control" id="dateofbirth" placeholder="enter your date of birth">
+      <div class="alert alert-danger mt-2 fade show" id='dateofbirtherror' role="alert">
+          <p id='dateofbirtherrorinfo'></p>
+        </div>
     </div>
-  </div>
+    </div>
+
    <div class="form-group row">
-    <label for="exampleFormControlSelect1"class="col-sm-2 col-form-label">Sex</label>
+    <label for="sex"class="col-sm-2 col-form-label">Sex</label>
     <div class="col-sm-10">
-    <select class="form-control" id="exampleFormControlSelect1">
-       <option>....</option>
+    <select class="form-control" id="sex">
       <option>Male</option>
       <option>Female</option>
     </select>
 </div>
   </div>
+
   <div class="form-group row">
-    <label for="companyaddress"class="col-sm-2 col-form-label">Billing-Address</label>    
+    <label for="billingaddress"class="col-sm-2 col-form-label">Billing-Address</label>    
          <div class="col-sm-10">
-    <textarea class="form-control" id="companyaddress" rows="3"></textarea>
-  </div>
-</div>
-  <div class="form-group row">
-    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
-    <div class="col-sm-10">
-      <input type="password" class="form-control" id="inputPassword" placeholder="enter your password">
+    <textarea class="form-control" id="billingaddress" rows="3"></textarea>
+    <div class="alert alert-danger mt-2 fade show" id='addresserror' role="alert">
+          <p id='billingaddresserrorinfo'></p>
+        </div>
     </div>
   </div>
+
   <div class="form-group row">
-    <label for="inputPassword" class="col-sm-2 col-form-label"> Confirm Password</label>
+    <label for="inputpassword" class="col-sm-2 col-form-label">Password</label>
     <div class="col-sm-10">
-      <input type="password" class="form-control" id="inputPassword" placeholder="confirm password">
+      <input type="password" class="form-control" id="inputpassword" placeholder="enter your password">
+      <div class="alert alert-danger mt-2 fade show" id='inputpassworderror' role="alert">
+          <p id='inputpassworderrorinfo'></p>
+        </div>
+    </div>
+    </div>
+  
+  <div class="form-group row">
+    <label for="confirmpassword" class="col-sm-2 col-form-label"> Confirm Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="confirmpassword" placeholder="confirm password">
+      <div class="alert alert-danger mt-2 fade show" id='confirmpassworderror' role="alert">
+          <p id='inputassworderrorinfo'></p>
+        </div>
     </div>
   </div>
   
   <div class="form-group form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Click to agree with our <a href='#'> terms and conditions</a></label>
+    <input type="checkbox" class="form-check-input" id="check">
+    <label class="form-check-label" for="check">Click to agree with our <a href='#'> terms and conditions</a></label>
+    <div class="alert alert-danger mt-2 fade show" id='checkerror' role="alert">
+          <p id='checkerrorinfo'></p>
+        </div>
   </div>
   <button type="submit" class="btn btn-primary">Create </button>
    <button type="reset" class="btn btn-danger">Cancel</button>
 </form>
-
 </div>
+
+
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
@@ -397,7 +439,9 @@
   <div class="form-group">
     <label for="individualEmail">Email address</label>
     <input type="email" name='individualEmail' class="form-control" id="individualEmail" aria-describedby="emailHelp" placeholder="Enter email">
+    
   </div>
+  
   <div class="form-group">
     <label for="individualPassword">Password</label>
     <input type="password" name='individualPassword' class="form-control" id="individualPassword" placeholder="Password">
@@ -439,9 +483,107 @@
   const api_url = 'https://api.ipdata.co/?api-key=076874e70ff89ab0329a1e75a7267274549cdce77434641981b7751a'
   const response = await fetch(api_url);
   const data = await response.json();
-   const {country_code} = data;
+   const {country_code,calling_code} = data;
  console.log(data)
 document.getElementById('countriesList').value = country_code
 }
 Location()
+
+// form validation
+
+$('.alert').hide()
+let firstname = document.getElementById('firstName')
+let firstnameerrormessage = document.getElementById('firstnameerrorinfo')
+const lastname = document.getElementById('lastName')
+const lastnameerrormessage = document.getElementById('lastnameerrorinfo')
+const email = document.getElementById('email')
+const emailerrormessage = document.getElementById('emailnameerrorinfo')
+const phone = document.getElementById('phonenumber')
+const phoneerrormessage = document.getElementById('phoneerrorinfo')
+const dob = document.getElementById('dateofbirth')
+const doberrormessage = document.getElementById('dateofbirtherrorinfo')
+const billingaddress = document.getElementById('billingaddress')
+const billingaddresserrormessage = document.getElementById('billingaddresserrorinfo')
+const password = document.getElementById('inputpassword')
+const passworderrormessage = document.getElementById('inputpassworderrorinfo')
+const confirmpassword = document.getElementById('confirmpassword')
+const confirmerrormessage = document.getElementById('inputassworderrorinfo')
+const check = document.getElementById('check')
+const checkederrormessage = document.getElementById('checkerrorinfo')
+// regex expressions to be used
+let no_number = /^(?=[A-Za-z]{2,})(?!\d)/;
+let password_regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{10,})/
+
+function validate(){
+    if(firstname.value==''){
+      $('#firstnameerror').show()
+      firstnameerrormessage.innerHTML = "Please enter a username"
+      return false
+    }
+    if ( no_number.test(firstname.value) == false){
+       $('#firstnameerror').show()
+      firstnameerrormessage.innerHTML = "Should at least 2 letters long with no numbers"
+      return false
+    }
+    if(lastname.value==''){
+      $('#lastnameerror').show()
+      lastnameerrormessage.innerHTML = "Please enter a username"
+      return false
+    }
+    if ( no_number.test(lastname.value) == false){
+       $('#lastnameerror').show()
+      lastnameerrormessage.innerHTML = "Should at least 2 letters long with no numbers"
+      return false
+    }
+    if(email.value==''){
+      $('#emailnameerror').show()
+      emailerrormessage.innerHTML = "Please enter an Email address"
+      return false
+    }
+    if(email.value.indexOf("@")== -1){
+      $('#emailnameerror').show()
+      emailerrormessage.innerHTML = "Please enter an Email address"
+      return false
+    }
+    if(phone.value == ''){
+      $('#phoneerror').show()
+      phoneerrormessage.innerHTML = "Please enter phone number"
+      return false
+    }
+    if(dob.value == ''){
+      $('#dateofbirtherror').show()
+      doberrormessage.innerHTML = "Please enter your date of birth"
+      return false
+    }
+    if(billingaddress.value == ''){
+      $('#addresserror').show()
+      billingaddresserrormessage.innerHTML = "Please enter your address"
+      return false
+    }
+     if (password_regex.test(password.value) == false){
+       $('#inputpassworderror').show()
+      passworderrormessage.innerHTML = "Should at least 1 lower and uppercase character and 1 number as well as 1 special character total lenght 10"
+      return false
+    }
+    if (password.value !== confirmpassword.value ){
+       $('#confirmpassworderror').show()
+      confirmerrormessage.innerHTML = "Password doe not match"
+      return false
+    }
+     if(!check.checked){
+        Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'You must agree to the terms first.',
+        footer: '<a href>Why do I have this issue?</a>'
+        })
+     return false;
+    }
+}
+     firstname.addEventListener("keypress",function(){
+        $('#firstnameerror').hide()
+        console.log(' i dont work')
+    });
+
+    
   </script>
