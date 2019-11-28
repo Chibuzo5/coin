@@ -74,12 +74,17 @@ nav {
         }
         .createForms{
         margin-top: 1rem;
-        input:not([type='checkbox']){
-            width:50%;
+       .alert, input:not([type='checkbox']){
+            width:50% !important;
         } 
         select,textarea{
           width:50%;  
         }     
+        .alert{
+            padding:0px;
+        }p{
+            text-align: center;
+        }
     }
     .img-c{
             position: absolute;
@@ -132,4 +137,89 @@ nav {
              transform: translateY(50px);
         }
     }
+ // for the service page
+ .service{
+     #svg{
+         margin:10px
+     }
+ }
+
+ // for the summary page
+ .summary{
+     svg{
+         position: absolute;
+         right:15rem;
+     }
+       #cart{
+     animation: cart 2s  infinite linear;
+      animation-delay: 2s;
+      animation-direction: alternate;
+      z-index: -40;
+    }
+    #flowers{
+        z-index: -50;
+    }
+     @keyframes cart {
+         from{
+            transform: translate(0px);
+            
+        }
+        to{
+             transform: translate(-70px);
+        }
+     }
+ }
+ // settings page
+//  .settings{
+//      svg{
+//          margin-top:-100px;
+//          margin-right:-100px
+//      }
+//      #button1{
+//      animation: btn1 5s  infinite linear;
+//       animation-delay: 2s;
+//       animation-direction: alternate;
+//       z-index: -40;
+//     }
+//     #button2{
+//      animation: btn2 4s  infinite linear;
+//       animation-delay: 2s;
+//       animation-direction: alternate;
+//       z-index: -40;
+//     }
+//     #button3{
+//      animation: btn3 3s  infinite linear;
+//       animation-delay: 2s;
+//       animation-direction: alternate;
+//       z-index: -40;
+//     }
+//     @keyframes btn1 {
+//          from{
+//             transform: translate(400px);
+            
+//         }
+//         to{
+//              transform: translate(-120px);
+//         }
+//      }
+//      @keyframes btn2 {
+//          from{
+//             transform: translate(180px);
+            
+//         }
+//         to{
+//              transform: translate(-120px);
+//         }
+//      }
+//      @keyframes btn3 {
+//          from{
+//             transform: translate(40px);
+            
+//         }
+//         to{
+//              transform: translate(-40px);
+//         }
+//      }
+//  }
+   
 

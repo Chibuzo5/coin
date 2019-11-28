@@ -104,12 +104,20 @@ nav, .c_btn {
   margin-top: 1rem;
 }
 
-.createaccount .createForms input:not([type='checkbox']) {
-  width: 50%;
+.createaccount .createForms .alert, .createaccount .createForms input:not([type='checkbox']) {
+  width: 50% !important;
 }
 
 .createaccount .createForms select, .createaccount .createForms textarea {
   width: 50%;
+}
+
+.createaccount .createForms .alert {
+  padding: 0px;
+}
+
+.createaccount .createForms p {
+  text-align: center;
 }
 
 .createaccount .img-c {
@@ -182,6 +190,51 @@ nav, .c_btn {
   to {
     -webkit-transform: translateY(50px);
             transform: translateY(50px);
+  }
+}
+
+.service #svg {
+  margin: 10px;
+}
+
+.summary svg {
+  position: absolute;
+  right: 15rem;
+}
+
+.summary #cart {
+  -webkit-animation: cart 2s  infinite linear;
+          animation: cart 2s  infinite linear;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  z-index: -40;
+}
+
+.summary #flowers {
+  z-index: -50;
+}
+
+@-webkit-keyframes cart {
+  from {
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
+  }
+  to {
+    -webkit-transform: translate(-70px);
+            transform: translate(-70px);
+  }
+}
+
+@keyframes cart {
+  from {
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
+  }
+  to {
+    -webkit-transform: translate(-70px);
+            transform: translate(-70px);
   }
 }
 /*# sourceMappingURL=main.css.map */
