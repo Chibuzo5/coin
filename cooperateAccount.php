@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+     <script src="sweetalert2.min.js"></script>
+      <link rel="stylesheet" href="sweetalert2.min.css"> 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
@@ -51,29 +54,41 @@
 <!-- Sign up form-->
 <div class='container'>
 <h2 class='row d-flex justify-content-center mt-3'>Create Cooperate Account</h2>
-<form class='createForms'>
+<form class='createForms' onsubmit="return validate()">
   <div class="form-group row">
     <label for="businessName" class="col-sm-2 col-form-label">Business Name</label>
     <div class="col-sm-10">
       <input type="text" class="form-control" id="businessName"  placeholder='enter your business name'>
+    <div class="alert alert-danger mt-2 fade show" id='businessNameerror' role="alert">
+          <p id='businessNameerrorinfo'></p>
+        </div>
     </div>
   </div>
   <div class="form-group row">
     <label for="RegistrationNumber" class="col-sm-2 col-form-label">Registration Number</label>
     <div class="col-sm-10">
       <input type="number" class="form-control" id="RegistrationNumber" placeholder="enter your last name">
+    <div class="alert alert-danger mt-2 fade show" id='RegistrationNumbererror' role="alert">
+          <p id='RegistrationNumbererrorinfo'></p>
+        </div>
     </div>
   </div>
   <div class="form-group row">
     <label for="email" class="col-sm-2 col-form-label">Email</label>
     <div class="col-sm-10">
       <input type="email" class="form-control" id="email" placeholder="enter your email">
+      <div class="alert alert-danger mt-2 fade show" id='emailerror' role="alert">
+          <p id='emailerrorinfo'></p>
+        </div>
     </div>
   </div>
   <div class="form-group row">
     <label for="phonenumber" class="col-sm-2 col-form-label">Phone</label>
     <div class="col-sm-10">
       <input type="tel" class="form-control" id="phonenumber" placeholder="enter your phone number">
+     <div class="alert alert-danger mt-2 fade show" id='phonenumbererror' role="alert">
+          <p id='phonenumbererrorinfo'></p>
+        </div>
     </div>
   </div>
   <div class="form-group row">
@@ -337,23 +352,32 @@
     <label for="companyaddress"class="col-sm-2 col-form-label">Address</label>    
          <div class="col-sm-10">
     <textarea class="form-control" id="companyaddress" rows="3"></textarea>
+    <div class="alert alert-danger mt-2 fade show" id='companyaddresserror' role="alert">
+          <p id='companyaddresserrorinfo'></p>
+        </div>
   </div>
 </div>
   <div class="form-group row">
     <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
     <div class="col-sm-10">
       <input type="password" class="form-control" id="inputPassword" placeholder="enter your password">
+     <div class="alert alert-danger mt-2 fade show" id='inputPassworderror' role="alert">
+          <p id='inputPassworderrorinfo'></p>
+        </div>
     </div>
   </div>
   <div class="form-group row">
     <label for="inputPassword" class="col-sm-2 col-form-label"> Confirm Password</label>
     <div class="col-sm-10">
-      <input type="password" class="form-control" id="inputPassword" placeholder="confirm password">
+      <input type="password" class="form-control" id="confirmPassword" placeholder="confirm password">
+       <div class="alert alert-danger mt-2 fade show" id='confirmPassworderror' role="alert">
+          <p id='confirmPassworderrorinfo'></p>
+        </div>
     </div>
   </div>
   
   <div class="form-group form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <input type="checkbox" class="form-check-input" id="check">
     <label class="form-check-label" for="exampleCheck1">Click to agree with our <a href='#'> terms and conditions</a></label>
   </div>
   <button type="submit" class="btn btn-primary">Create </button>
@@ -470,10 +494,10 @@
     </defs>
     </svg>
 </div>
-
 </body>
 </html>
 <script>
+ 
   async function Location(){
   const api_url = 'https://api.ipdata.co/?api-key=076874e70ff89ab0329a1e75a7267274549cdce77434641981b7751a'
   const response = await fetch(api_url);
@@ -483,4 +507,74 @@
 document.getElementById('countriesList').value = country_code
 }
 Location()
+//form validation
+$('.alert').hide()
+let business_name = document.getElementById('businessName')
+let business_nameerrormessage = document.getElementById('businessNameerrorinfo')
+const registration_number = document.getElementById('RegistrationNumber')
+const registration_numbererrormessage = document.getElementById('RegistrationNumbererrorinfo')
+const email = document.getElementById('email')
+const emailerrormessage = document.getElementById('emailnameerrorinfo')
+const phone = document.getElementById('phonenumber')
+const phoneerrormessage = document.getElementById('phonenumbererrorinfo')
+const companyaddress = document.getElementById('companyaddress')
+const companyaddresserrormessage = document.getElementById('companyaddresserrorinfo')
+const password = document.getElementById('inputPassword')
+const passworderrormessage = document.getElementById('inputPassworderrorinfo')
+const confirmpassword = document.getElementById('confirmPassword')
+const confirmerrormessage = document.getElementById('confirmPassworderrorinfo')
+const check = document.getElementById('check')
+let password_regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{10,})/
+  
+  function validate(){
+    if(business_name.value==''){
+      $('#businessNameerror').show()
+      business_nameerrormessage.innerHTML = "Please enter a Business Name"
+      return false
+    }
+    if(registration_number.value==''){
+      $('#RegistrationNumbererror').show()
+      registration_numbererrormessage.innerHTML = "Please enter your business registration number"
+      return false
+    }
+     if(email.value==''){
+      $('#emailerror').show()
+      emailerrormessage.innerHTML = "Please enter an Email address"
+      return false
+    }
+    if(email.value.indexOf("@")== -1){
+      $('#emailerror').show()
+      emailerrormessage.innerHTML = "Please enter a valid Email address"
+      return false
+    }
+    if(phone.value == ''){
+      $('#phonenumbererror').show()
+      phoneerrormessage.innerHTML = "Please enter phone number"
+      return false
+    }
+     if(companyaddress.value == ''){
+      $('#addresserror').show()
+      companyaddresserrormessage.innerHTML = "Please enter your address"
+      return false
+    }
+    if (password_regex.test(password.value) == false){
+       $('#inputPassworderror').show()
+      passworderrormessage.innerHTML = "Should at least 1 lower and uppercase character and 1 number as well as 1 special character total lenght 10"
+      return false
+    }
+    if (password.value !== confirmpassword.value ){
+       $('#confirmPassworderror').show()
+      confirmerrormessage.innerHTML = "Password does not match"
+      return false
+    }
+     if(!check.checked){
+        Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'You must agree to the terms first.',
+        footer: '<a href>Why do I have this issue?</a>'
+        })
+     return false;
+    }
+  }
   </script>
