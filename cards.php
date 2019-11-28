@@ -169,8 +169,153 @@
                         <!-- Card Type Ends -->
                     </div>
                 </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <!-- Card -->
+                    <div class="item">
+                        <!-- Transparent Image -->
+                        <img src="images/transparent.png" alt="" class="img-responsive" />
+                        <!-- Heading -->
+                        <div class="item-heading clearfix">
+                            <!-- Heading -->
+                            <h3>Debit Card</h3>
+                            <!-- Bank Name -->
+                            <h4>AR Bank</h4>
+                        </div>
+                        <!-- Account -->
+                        <div class="item-account">
+                            <!-- Value -->
+                            <span>1234</span>
+                            <span>5678</span>
+                            <span>0011</span>
+                            <span>1626</span>
+                        </div>
+                        <!-- Validity Starts -->
+                        <div class="item-validity">
+                            <div class="row">
+                                
+                                
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                    <!-- Item -->
+                                    <div class="item-valid clearfix">
+                                        <!-- Valid Thru -->
+                                        <h5>Valid Thru</h5>
+                                        <!-- Date -->
+                                        <span>12/15</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Validity Ends -->
+
+                        <!-- Card Type Starts -->
+                        <div class="item-cc-type clearfix">
+                            <!-- Type -->
+                            <h6>VISA CARD</h6>
+                            <!-- Icon -->
+                            <i class="fa fa-cc-visa"></i>
+                        </div>
+                        <!-- Card Type Ends -->
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <!-- Card -->
+                    <div class="item">
+                        <!-- Transparent Image -->
+                        <img src="images/transparent.png" alt="" class="img-responsive" />
+                        <!-- Heading -->
+                        <div class="item-heading clearfix">
+                            <!-- Heading -->
+                            <h3>Debit Card</h3>
+                            <!-- Bank Name -->
+                            <h4>AR Bank</h4>
+                        </div>
+                        <!-- Account -->
+                        <div class="item-account">
+                            <!-- Value -->
+                            <span>1234</span>
+                            <span>5678</span>
+                            <span>0011</span>
+                            <span>1626</span>
+                        </div>
+                        <!-- Validity Starts -->
+                        <div class="item-validity">
+                            <div class="row">
+                                
+                                
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                    <!-- Item -->
+                                    <div class="item-valid clearfix">
+                                        <!-- Valid Thru -->
+                                        <h5>Valid Thru</h5>
+                                        <!-- Date -->
+                                        <span>12/15</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Validity Ends -->
+
+                        <!-- Card Type Starts -->
+                        <div class="item-cc-type clearfix">
+                            <!-- Type -->
+                            <h6>VISA CARD</h6>
+                            <!-- Icon -->
+                            <i class="fa fa-cc-visa"></i>
+                        </div>
+                        <!-- Card Type Ends -->
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <!-- Card -->
+                    <div class="item">
+                        <!-- Transparent Image -->
+                        <img src="images/transparent.png" alt="" class="img-responsive" />
+                        <!-- Heading -->
+                        <div class="item-heading clearfix">
+                            <!-- Heading -->
+                            <h3>Debit Card</h3>
+                            <!-- Bank Name -->
+                            <h4>AR Bank</h4>
+                        </div>
+                        <!-- Account -->
+                        <div class="item-account">
+                            <!-- Value -->
+                            <span>1234</span>
+                            <span>5678</span>
+                            <span>0011</span>
+                            <span>1626</span>
+                        </div>
+                        <!-- Validity Starts -->
+                        <div class="item-validity">
+                            <div class="row">
+                                
+                                
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                    <!-- Item -->
+                                    <div class="item-valid clearfix">
+                                        <!-- Valid Thru -->
+                                        <h5>Valid Thru</h5>
+                                        <!-- Date -->
+                                        <span>12/15</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Validity Ends -->
+
+                        <!-- Card Type Starts -->
+                        <div class="item-cc-type clearfix">
+                            <!-- Type -->
+                            <h6>VISA CARD</h6>
+                            <!-- Icon -->
+                            <i class="fa fa-cc-visa"></i>
+                        </div>
+                        <!-- Card Type Ends -->
+                    </div>
+                </div>
 </div>
 
 <div>
+
 </body>
 </html>
