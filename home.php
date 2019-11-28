@@ -63,7 +63,6 @@
  <script src='skycons.js'></script>
  <canvas id="cloudy" width="128" height="128"></canvas>
  <p id='info'></p>
- 
 </body>
 </html>
 <script>
