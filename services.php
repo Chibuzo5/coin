@@ -6,8 +6,8 @@
     <title>Coin</title>
     <meta name="description" content="">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-    <!-- <script src="sweetalert2.min.js"></script>
-      <link rel="stylesheet" href="sweetalert2.min.css"> -->
+     <script src="sweetalert2.min.js"></script>
+      <link rel="stylesheet" href="sweetalert2.min.css"> 
     
    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./css/main.css">
   </head>
 
-  <body class='container home'>
+  <body class='container service'>
                                     <!-- Navigation Element -->
      
     <nav class="navbar navbar-expand-lg navbar-light bg-light mt-3 ">
@@ -58,8 +58,18 @@
     </div>
   </div>
 </nav>
-<div  ></div>
+<img id='svg' class='mt-7' src='SVG/thinking.svg'>
  
  
 </body>
 </html>
+<script>
+  Swal.fire({
+  title: 'Oops!',
+  text: 'Services Are Temporary Unavailable.',
+  imageUrl: 'images/undraw_not_found_60pq.png',
+  imageWidth: 400,
+  imageHeight: 300,
+  imageAlt: 'Custom image',
+})
+  </script>
