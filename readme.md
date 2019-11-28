@@ -2,7 +2,7 @@
 # Welcome To Coin
 ## Home For All Financial Transactions
 
-## Coin is an online payement processor still in its under construction. Coin is design to help indivituals and business to handle financial transations of any sort.
+## Coin is an online payement processor still  under construction. Coin is design to help indivituals and business to handle financial transations of any sort.
 
 ## I would love to give credits to the following
 - - -
